@@ -81,7 +81,7 @@ export default function HomePage() {
 
             {/* Footer */}
             <footer className="footer">
-                <p>&copy; 2025 3DPrintHub. All rights reserved.</p>
+                <p>&copy; 2025 3DPrintHub. All rights reserved</p>
             </footer>
         </div>
     );
