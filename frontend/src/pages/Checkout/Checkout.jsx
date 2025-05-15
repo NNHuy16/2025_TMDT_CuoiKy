@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./checkout.css";
-import Header from "../header/header.jsx";
+import Header from "../../components/header/header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 const Checkout = ({ cartItems, onPlaceOrder }) => {
     const [formData, setFormData] = useState({
@@ -113,6 +114,7 @@ const Checkout = ({ cartItems, onPlaceOrder }) => {
                 </div>
             </div>
         </div>
+            <Footer/>
             </>
     );
 };

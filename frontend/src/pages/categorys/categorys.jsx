@@ -1,6 +1,6 @@
 import React from 'react';
 import './Category.css';
-import Header from '../../pages/Header/Header.jsx';
+import Header from '../../components/header/Header.jsx';
 import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
@@ -12,6 +12,7 @@ import product5 from '../../assets/image/gokuVsGohan.jpg';
 import product6 from '../../assets/image/gozila.jpg';
 import product7 from '../../assets/image/ayaka.png';
 import product8 from '../../assets/image/daoBuom.png';
+import Footer from "../../components/Footer/Footer.jsx";
 
 const products = [
     { id: 1, name: 'Mô hình goku', price: '350.000₫', image: product1 },
@@ -62,6 +63,7 @@ const Category = () => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
