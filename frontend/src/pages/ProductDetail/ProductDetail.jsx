@@ -160,7 +160,7 @@ const ProductDetail = () => {
                             <option>Bên hông</option>
                         </select>
 
-                        <label>Số lượng</label>
+                        <label>Số lượng:</label>
                         <div className="quantity">
                             <button>-</button>
                             <input type="number" value="1" readOnly />
