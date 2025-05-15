@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { useNavigate } from "react-router-dom";
 
 const products = [
     {
@@ -23,6 +24,7 @@ const products = [
 ];
 
 export default function HomePage() {
+    const navigate = useNavigate();
     return (
         <div className="homepage">
             {/* Header */}
@@ -30,7 +32,7 @@ export default function HomePage() {
                 <h1 className="logo">3DPrintHub</h1>
                 <nav className="nav">
                     <a href="#">Trang chủ</a>
-                    <a href="#">Sản phẩm</a>
+                    <a onClick={() => navigate('/category')} style={{cursor: "pointer"}}>Sản phẩm</a>
                     <a href="#">Dịch vụ</a>
                     <a href="#">Liên hệ</a>
                 </nav>
