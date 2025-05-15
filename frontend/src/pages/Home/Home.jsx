@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const products = [
     {
@@ -29,11 +30,12 @@ export default function HomePage() {
             <header className="header">
                 <h1 className="logo">3DPrintHub</h1>
                 <nav className="nav">
-                    <a href="#">Trang chủ</a>
+                    <a href="/">Trang chủ</a>
                     <a href="#">Sản phẩm</a>
                     <a href="#">Dịch vụ</a>
                     <a href="#">Liên hệ</a>
                 </nav>
+                <Link to="/cart" className="cart-button">🛒</Link>
             </header>
 
             {/* Banner */}

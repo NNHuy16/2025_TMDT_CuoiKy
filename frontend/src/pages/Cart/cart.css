@@ -1,0 +1,232 @@
+/* Tổng thể container */
+.cart-page {
+    max-width: 1100px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+    padding: 0 20px;
+}
+
+/* Tiêu đề */
+.cart-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Nếu giỏ trống */
+.cart-empty {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Bố cục 2 cột trái - phải */
+.cart-content {
+    display: flex;
+    gap: 40px;
+}
+
+/* Cột trái - Danh sách sản phẩm */
+.cart-left {
+    flex: 2;
+}
+
+/* Bảng sản phẩm */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table thead tr {
+    border-bottom: 2px solid #ddd;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-table th {
+    font-weight: 600;
+    color: #666;
+}
+
+/* Ảnh sản phẩm + tên */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-info img.item-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+/* Số lượng input */
+.cart-table input[type="number"] {
+    width: 60px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.cart-table input[type="number"]:focus {
+    border-color: #333;
+}
+
+/* Nút xóa */
+.btn-remove {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #b33a3a;
+    transition: color 0.3s ease;
+}
+
+.btn-remove:hover {
+    color: #7a1f1f;
+}
+
+/* Hành động dưới bảng */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn-clear,
+.btn-continue {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-clear:hover,
+.btn-continue:hover {
+    background-color: #e5e5e5;
+    border-color: #999;
+}
+
+/* Cột phải - Tổng tiền */
+.cart-right {
+    flex: 1;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+    background-color: #fff;
+}
+
+.cart-right h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #222;
+}
+
+/* Các dòng trong tổng tiền */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #555;
+}
+
+.summary-row.total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/* Nút thanh toán */
+.btn-checkout {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-checkout:hover {
+    background-color: #333;
+}
+
+/* Form mã giảm giá */
+.promo-code {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.promo-code input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.promo-code input[type="text"]:focus {
+    border-color: #000;
+}
+
+.promo-code button {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.promo-code button:hover {
+    background-color: #e5e5e5;
+    border-color: #999;
+}
+
+/* Chú thích nhỏ dưới */
+.note {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.3;
+}
