@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./checkout.css";
+import Header from "../header/header.jsx";
 
 const Checkout = ({ cartItems, onPlaceOrder }) => {
     const [formData, setFormData] = useState({
@@ -32,6 +33,8 @@ const Checkout = ({ cartItems, onPlaceOrder }) => {
     const total = subtotal + shipping + tax;
 
     return (
+        <>
+            <Header />
         <div className="checkout-page">
             <h1 className="checkout-title">Thanh toán</h1>
             <div className="checkout-content">
@@ -110,6 +113,7 @@ const Checkout = ({ cartItems, onPlaceOrder }) => {
                 </div>
             </div>
         </div>
+            </>
     );
 };
 

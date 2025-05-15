@@ -4,6 +4,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 
 import { useNavigate } from "react-router-dom";
+import Header from "../header/header.jsx";
 
 
 const products = [
@@ -31,22 +32,7 @@ export default function HomePage() {
     const navigate = useNavigate();
     return (
         <div className="homepage">
-            {/* Header */}
-            <header className="header">
-                <h1 className="logo">3DPrintHub</h1>
-                <nav className="nav">
-
-                    <a href="/">Trang chủ</a>
-                  
-
-                   
-                    <a onClick={() => navigate('/category')} style={{cursor: "pointer"}}>Sản phẩm</a>
-
-                    <a href="#">Dịch vụ</a>
-                    <a href="#">Liên hệ</a>
-                </nav>
-                <Link to="/cart" className="cart-button">🛒</Link>
-            </header>
+            <Header/>
 
             {/* Banner */}
             <section className="banner">

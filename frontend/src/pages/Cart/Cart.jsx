@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./cart.css";
+import Header from "../header/header.jsx";
 
 const Cart = ({ cartItems, onUpdateQuantity, onRemoveItem, onClearCart }) => {
     const getTotalPrice = () => {
@@ -8,6 +9,8 @@ const Cart = ({ cartItems, onUpdateQuantity, onRemoveItem, onClearCart }) => {
     };
 
     return (
+        <>
+            <Header />
         <div className="cart-page">
             <h1 className="cart-title">Your Cart</h1>
 
@@ -98,6 +101,7 @@ const Cart = ({ cartItems, onUpdateQuantity, onRemoveItem, onClearCart }) => {
                 </div>
             )}
         </div>
+        </>
     );
 };
 

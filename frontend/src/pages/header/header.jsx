@@ -20,8 +20,8 @@ export default function Header() {
     </nav>
 
     <div className="header-icons">
-    <i className="fas fa-shopping-cart" onClick={() => navigate("/cart")}></i>
-    <i className="fas fa-user" onClick={() => navigate("/login")}></i>
+    <i className="fas fa-shopping-cart" onClick={() => navigate("/cart")}>🛒</i>
+    <i className="fas fa-user" onClick={() => navigate("/login")}>Login</i>
     </div>
     </header>
 );

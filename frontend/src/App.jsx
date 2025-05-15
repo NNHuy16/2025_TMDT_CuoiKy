@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
-
-
+import Home from "./pages/Home/Home.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
 import Checkout from "./pages/Checkout/Checkout.jsx";
 
@@ -64,8 +63,6 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-
-              
                 <Route
                     path="/cart"
                     element={
@@ -73,7 +70,6 @@ function App() {
                             cartItems={cartItems}
                             onUpdateQuantity={onUpdateQuantity}
                             onRemoveItem={onRemoveItem}
-
                         />
                     }
                 />
@@ -83,7 +79,6 @@ function App() {
                         <Checkout cartItems={cartItems} onPlaceOrder={handlePlaceOrder} />
                     }
                 />
-
                 <Route path='/' element={<Home />} />
                 <Route path='/category' element={<Category />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
