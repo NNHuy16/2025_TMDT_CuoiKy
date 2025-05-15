@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./cart.css";
-import Header from "../header/header.jsx";
+import Header from "../../components/header/header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 const Cart = ({ cartItems, onUpdateQuantity, onRemoveItem, onClearCart }) => {
     const getTotalPrice = () => {
@@ -101,6 +102,7 @@ const Cart = ({ cartItems, onUpdateQuantity, onRemoveItem, onClearCart }) => {
                     </div>
                 )}
             </div>
+            <Footer/>
         </>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '../Header/Header';
+import Header from '../../components/header/Header';
 import './ProductDetail.css';
 
 import product1 from '../../assets/image/goku.jpg';
@@ -11,6 +11,7 @@ import product5 from '../../assets/image/gokuVsGohan.jpg';
 import product6 from '../../assets/image/gozila.jpg';
 import product7 from '../../assets/image/ayaka.png';
 import product8 from '../../assets/image/daoBuom.png';
+import Footer from "../../components/Footer/Footer.jsx";
 
 const productList = [
     {
@@ -177,6 +178,7 @@ const ProductDetail = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };

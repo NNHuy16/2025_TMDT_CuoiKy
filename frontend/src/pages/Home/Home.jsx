@@ -1,7 +1,8 @@
 import React from "react";
 import "./home.css";
 import { Link, useNavigate } from "react-router-dom";
-import Header from "../header/header.jsx";
+import Header from "../../components/header/header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 const products = [
     { id: 1, name: "Mô hình robot", price: "350.000₫", image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpvydovwpo3bef" },
@@ -97,17 +98,17 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-
-            <footer className="footer">
-                <div className="footer-content">
-                    <div className="footer-logo">TD Triple D</div>
-                    <div className="footer-links">
-                        <p>Trang chủ | Sản phẩm | Dịch vụ | Liên hệ</p>
-                        <p>Email: contact@3dprint.vn</p>
-                    </div>
-                </div>
-                <p className="footer-copy">© 2025 TD Triple D. All rights reserved.</p>
-            </footer>
+            <Footer/>
+            {/*<footer className="footer">*/}
+            {/*    <div className="footer-content">*/}
+            {/*        <div className="footer-logo">TD Triple D</div>*/}
+            {/*        <div className="footer-links">*/}
+            {/*            <p>Trang chủ | Sản phẩm | Dịch vụ | Liên hệ</p>*/}
+            {/*            <p>Email: contact@3dprint.vn</p>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <p className="footer-copy">© 2025 TD Triple D. All rights reserved.</p>*/}
+            {/*</footer>*/}
         </div>
     );
 }
