@@ -1,8 +1,16 @@
+
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx"; // Nếu bạn có trang Home
+
+
 import Cart from "./pages/Cart/Cart.jsx";
 import Checkout from "./pages/Checkout/Checkout.jsx";
+
+
+import './App.css'
+
+import {BrowserRouter, Routes,Route}  from "react-router-dom";
+import Category from "./pages/categorys/categorys.jsx";
+import ProductDetail from "./pages/ProductDetail/ProductDetail.jsx";
 
 
 function App() {
@@ -56,7 +64,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
+
+              
                 <Route
                     path="/cart"
                     element={
@@ -74,6 +83,11 @@ function App() {
                         <Checkout cartItems={cartItems} onPlaceOrder={handlePlaceOrder} />
                     }
                 />
+
+                <Route path='/' element={<Home />} />
+                <Route path='/category' element={<Category />} />
+                <Route path="/product/:id" element={<ProductDetail />} />
+
             </Routes>
         </BrowserRouter>
     );
