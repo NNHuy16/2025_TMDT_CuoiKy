@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { Link, useNavigate } from "react-router-dom";
-import Header from "../../components/header/header.jsx";
+import Header from "../../components/Header/header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 
 const products = [
@@ -72,14 +72,36 @@ export default function HomePage() {
 
             <section className="quality-section">
                 <div className="quality-left">
-                    <h3>In ấn chất lượng, không thỏa hiệp</h3>
-                    <p>Chúng tôi cam kết mang đến sản phẩm in 3D sắc nét, bền đẹp và chính xác.</p>
-                    <button className="btn dark">Tư vấn ngay</button>
+                    <p className="why-title">Tại sao chọn chúng tôi</p>
+                    <h3>In ấn chất lượng,<br />không thỏa hiệp</h3>
+                    <p className="subtext">
+                        Chúng tôi sử dụng công nghệ in hiện đại và vật liệu cao cấp để đảm bảo thiết kế của bạn trông đẹp nhất.
+                    </p>
+                    <div className="features-grid">
+                        <div className="feature-card">
+                            <strong>No Minimum Orders</strong>
+                            <p>Đặt đúng số lượng bạn cần, kể cả chỉ một sản phẩm.</p>
+                        </div>
+                        <div className="feature-card">
+                            <strong>Fast Production</strong>
+                            <p>Hầu hết các đơn hàng sẽ được giao trong vòng 2–3 ngày làm việc sau khi được duyệt.</p>
+                        </div>
+                        <div className="feature-card">
+                            <strong>Premium Materials</strong>
+                            <p>Chúng tôi sử dụng vật liệu chất lượng cao, đẹp mắt và bền lâu.</p>
+                        </div>
+                        <div className="feature-card">
+                            <strong>Eco-Friendly Options</strong>
+                            <p>Các lựa chọn in ấn bền vững dành cho những khách hàng quan tâm đến môi trường.</p>
+                        </div>
+                    </div>
+                    <button className="btn black">Xem thêm về chất lượng</button>
                 </div>
                 <div className="quality-right">
-                    <img src="/images/quality-showcase.png" alt="In chất lượng cao" />
+                    <img src="https://png.pngtree.com/png-clipart/20230528/original/pngtree-3d-sale-tag-design-10-off-order-now-banner-png-image_9172342.png" alt="Máy in 3D" />
                 </div>
             </section>
+
 
             <section className="testimonial-section">
                 <h2>Các khách hàng nói gì ?</h2>
@@ -99,16 +121,7 @@ export default function HomePage() {
                 </div>
             </section>
             <Footer/>
-            {/*<footer className="footer">*/}
-            {/*    <div className="footer-content">*/}
-            {/*        <div className="footer-logo">TD Triple D</div>*/}
-            {/*        <div className="footer-links">*/}
-            {/*            <p>Trang chủ | Sản phẩm | Dịch vụ | Liên hệ</p>*/}
-            {/*            <p>Email: contact@3dprint.vn</p>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <p className="footer-copy">© 2025 TD Triple D. All rights reserved.</p>*/}
-            {/*</footer>*/}
+
         </div>
     );
 }

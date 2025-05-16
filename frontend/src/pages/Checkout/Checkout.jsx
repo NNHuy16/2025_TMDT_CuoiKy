@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./checkout.css";
-import Header from "../../components/header/header.jsx";
+import Header from "../../components/Header/header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 
 const Checkout = ({ cartItems, onPlaceOrder }) => {
