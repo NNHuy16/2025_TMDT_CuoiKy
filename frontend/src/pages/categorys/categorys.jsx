@@ -1,6 +1,6 @@
 import React from 'react';
 import './Category.css';
-import Header from '../../components/header/Header.jsx';
+import Header from '../../components/Header/Header.jsx';
 import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 

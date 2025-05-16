@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Header from '../../components/header/Header';
+import Header from '../../components/Header/Header';
 import './ProductDetail.css';
 
 import product1 from '../../assets/image/goku.jpg';

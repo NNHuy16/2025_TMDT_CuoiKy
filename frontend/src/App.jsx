@@ -10,6 +10,7 @@ import './App.css'
 import {BrowserRouter, Routes,Route}  from "react-router-dom";
 import Category from "./pages/categorys/categorys.jsx";
 import ProductDetail from "./pages/ProductDetail/ProductDetail.jsx";
+import LoginPage from "./components/Login/Login.jsx";
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
                     }
                 />
                 <Route path='/' element={<Home />} />
+                <Route path='/login' element={<LoginPage />} />
                 <Route path='/category' element={<Category />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
 
