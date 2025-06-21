@@ -136,3 +136,45 @@
     color: #888;
     line-height: 1.5;
 }
+/* Tabs chuyển loại sản phẩm */
+.checkout-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.checkout-tabs button {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-tabs button:hover {
+    background-color: #e5e5e5;
+}
+
+.checkout-tabs .active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Hiển thị thông tin sản phẩm custom */
+.custom-summary {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.custom-summary li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}

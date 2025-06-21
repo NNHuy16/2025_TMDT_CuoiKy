@@ -11,6 +11,7 @@ import {BrowserRouter, Routes,Route}  from "react-router-dom";
 import Category from "./pages/categorys/categorys.jsx";
 import ProductDetail from "./pages/ProductDetail/ProductDetail.jsx";
 import LoginPage from "./components/Login/Login.jsx";
+import CustomPage from "./pages/Custom/CustomPage.jsx";
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
                 />
                 <Route path='/' element={<Home />} />
                 <Route path='/login' element={<LoginPage />} />
+                <Route path='/custom' element={<CustomPage />} />
                 <Route path='/category' element={<Category />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
 
