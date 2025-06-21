@@ -3,6 +3,9 @@ import "./home.css";
 import { Link, useNavigate } from "react-router-dom";
 import Header from "../../components/Header/header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
+import { FaFileUpload } from "react-icons/fa";
+import { CgSelectR } from "react-icons/cg";
+import { CiDeliveryTruck } from "react-icons/ci";
 
 const products = [
     { id: 1, name: "Mô hình robot", price: "350.000₫", image: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpvydovwpo3bef" },
@@ -53,19 +56,25 @@ export default function HomePage() {
                 <h2>Quy trình 3 bước</h2>
                 <div className="steps">
                     <div className="step">
-                        <img src="/icons/design.svg" alt="Thiết kế" />
+                        <FaFileUpload size={32}/>
                         <h4>Tải bản thiết kế</h4>
                         <p>Bạn có thể upload hoặc yêu cầu đội ngũ thiết kế của chúng tôi hỗ trợ.</p>
                     </div>
                     <div className="step">
-                        <img src="/icons/select.svg" alt="Chọn sản phẩm" />
+                        <CgSelectR size={32}/>
                         <h4>Chọn sản phẩm</h4>
                         <p>Lựa chọn mẫu vật liệu, màu sắc và số lượng bạn mong muốn.</p>
                     </div>
                     <div className="step">
-                        <img src="/icons/delivery.svg" alt="Giao hàng" />
+                        <CiDeliveryTruck size={32}/>
                         <h4>Giao hàng</h4>
                         <p>Chúng tôi giao hàng nhanh chóng trên toàn quốc.</p>
+                    </div>
+                    {/* Nút tiến hành */}
+                    <div className="proceed-button-container">
+                        <Link to="/custom" className="proceed-button">
+                            Tiến hành
+                        </Link>
                     </div>
                 </div>
             </section>
